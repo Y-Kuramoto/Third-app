@@ -10,17 +10,17 @@ header {
   text-align: center;
 }
 
-.headline {
+h1 {
   font: size 32px;
 }
 
-.nav-list {
+ul {
   text-align: center;
   padding: 10px 0;
   margin: 0 auto;
 }
 
-.nav-list-item {
+ul li {
   list-style: none;
   display: inline-block;
   margin: 0 20px;

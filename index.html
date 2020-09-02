@@ -1,38 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- シンプルheader -->
     <!-- bodyタグの中にheaderタグを書き、ヘッダーの箱を準備 -->
     <header>
-        <!-- ロゴの箱を作る -->
-        <h1 class="headline">
-            <a>サンプルのサイト</a>
-        </h1>
-        <!-- ナビゲーション(リスト)の箱を作る -->
-        <ul class="nav-list">
-            <li class="nav-list-item">
-                <a>Home</a>
-            </li>
-            <li class="nav-list-item">About</li>
-            <li class="nav-list-item">Topic</li>       
-        </ul>
+      <!-- ロゴの箱を作る -->
+      <h1 class="headline">
+        <a>サンプルのサイト</a>
+      </h1>
+      <!-- ナビゲーション(リスト)の箱を作る -->
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a>Home</a>
+        </li>
+        <li class="nav-list-item">About</li>
+        <li class="nav-list-item">Topic</li>
+      </ul>
     </header>
 
     <main>
-        <ul>
-           <li>Home</li>
-           <li>Profile</li> 
-           <li>Creations</li>
-           <li>Contact</li>
-           <li>Blog</li>
-        </ul>
+      <!-- 箇条書きリストを表示しよう -->
+      <ul>
+        <li>Home</li>
+        <li>Profile</li>
+        <li>Creations</li>
+        <li>Contact</li>
+        <li>Blog</li>
+      </ul>
+      <!-- 表を作ろう -->
+      <table border="1">
+        <tr>
+          <th>header項目</th>
+          <th>内容</th>
+          <th>形式</th>
+        </tr>
+        <tr>
+          <td>Home</td>
+          <td>絵を用いて全体イメージを伝える</td>
+          <td>写真と文章</td>
+        </tr>
+        <tr>
+          <td>Profile</td>
+          <td>紹介文</td>
+          <td>かわいいフォント</td>
+        </tr>
+        <tr>
+          <td>Creations</td>
+          <td>絵の一覧</td>
+          <td>ページ飛び作りたい</td>
+        </tr>
+        <tr>
+          <td>Contact</td>
+          <td>連絡先記載</td>
+          <td>お問い合わせフォームも</td>
+        </tr>
+        <tr>
+          <td>Blog</td>
+          <td>url記載</td>
+          <td>ブログ紹介</td>
+        </tr>
+      </table>
+      <!-- フォーム作成 -->
+      <div class="contact">
+        <form action="example.php" method="post" name="contactForm">
+          <p>お名前</p>
+          <p><input type="text" placeholder="性 名" /></p>
+          <p>メール</p>
+          <p><input type="email" placeholder="メールアドレス" /></p>
+          <p>
+            性別: 
+            <input type="radio" name="gender" value="male" />男
+            <input type="radio" name="gender" value="male" />女
+            <input type="radio" name="gender" value="male" />その他
+          </p>
+          <p>
+              好きな飲み物:
+              <input type="checkbox" name="drink" value="water" id="mizu" checked/>
+              <label for="mizu">水</label>
+              <input type="checkbox" name="drink" value="juice" id="zyusu"/>
+              <label for="zyusu">ジュース</label>
+              <input type="checkbox" name="drink" value="cofffee" id="kohi"/>
+              <label for="kohi">コーヒー</label>
+              <input type="checkbox" name="drink" value="tea" id="kotya"/>
+              <label for="kotya">紅茶</label>
+            </p>
+            <p>
+                血液型: 
+                <select name="bloodtype" id="">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="O">O</option>
+                    <option value="AB">AB</option>
+                    <option value="不明">不明</option>
+                </select>
+            </p>
+            <p>
+                <p>お問い合わせ</p>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="メッセージを入力"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="送信する">
+            </p>
+        </form>
+      </div>
     </main>
 
     <!-- サイトの中身部分 -->
@@ -40,6 +117,7 @@
     <!-- シンプルfooter -->
     <!-- footerの箱を準備 -->
     <footer>
-        <p>ⓒ All rights reserved by webcampnavi.</p>
+      <p>ⓒ All rights reserved by webcampnavi.</p>
     </footer>
-</body>
+  </body>
+</html>
