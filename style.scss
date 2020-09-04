@@ -28,6 +28,16 @@ header {
   margin: 0 20px;
 }
 // 箇条書きリストを中央寄せにする
+main {
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+}
+li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px 20px;
+}
 
 footer {
   width: 100%;
