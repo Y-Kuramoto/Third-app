@@ -8,10 +8,12 @@ header {
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
+  background-color: #f3b6f0;
 }
 
 .headline {
   font: size 32px;
+  color: #fdfdfd;
 }
 
 .nav-list {
@@ -24,6 +26,7 @@ header {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
+  color: #ffffff;
 }
 
 main {
@@ -31,17 +34,31 @@ main {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20px;
+}
+
+.list2 {
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #a19aa1;
 }
 
 li {
   list-style: none;
   display: inline-block;
   margin: 0 10px;
+  padding: 10px 0;
 }
 
 table {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+}
+
+.contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -49,10 +66,10 @@ footer {
   height: 120px;
   text-align: center;
   padding: 50px 0;
-  background-color: #cab64a;
+  background-color: #9bcce9;
 }
 
-footer-text {
+footer p {
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

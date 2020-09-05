@@ -4,15 +4,21 @@
 }
 
 header {
+  // headerの幅めいいっぱいに
   width: 100%;
   padding: 15px 0;
   margin: 0 auto;
   //文字(ロゴ)の中央寄せ
   text-align: center;
+  // ロゴに背景色をつける
+  background-color: rgb(243, 182, 240);
 }
 
 .headline {
+  // ロゴ文字の大きさ指定
   font: size 32px;
+  // ロゴ文字色の変更
+  color: #fdfdfd;
 }
 .nav-list {
   // 文字(リスト)の中央寄せ
@@ -26,25 +32,46 @@ header {
   list-style: none;
   //   インラインブロック要素にして横並びにした
   display: inline-block;
+  // 左右幅20pxにした
   margin: 0 20px;
+  //文字色をつける
+  color: #ffffff;
 }
+// ここからmainにはいる
 // 箇条書きリストを中央寄せにする
 main {
   width: 100%;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  // headerとの間隔を空ける
+  margin-top: 20px;
 }
-li{
+.list2{
+  // 箇条書きリストに線を引く
+  border-width: 1.5px;
+  border-style: solid;
+  // 線の色付け
+  border-color: #a19aa1
+}
+li {
   list-style: none;
   display: inline-block;
   // justify-content: space-between;
   margin: 0 10px;
+  // リストの線と上下幅を取りたい
+  padding: 10px 0;
 }
 // 表を中央寄せにする
-table{
-margin-left : auto ;
-margin-right : auto ;
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+// ここからフォーム作成のところ
+.contact{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -52,8 +79,8 @@ footer {
   height: 120px;
   text-align: center;
   padding: 50px 0;
-  background-color: #cab64a;
+  background-color: #9bcce9;
 }
-footer-text {
+footer p {
   color: #fff;
 }
