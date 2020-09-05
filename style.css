@@ -5,7 +5,7 @@
 
 header {
   width: 100%;
-  padding: 15px 0;
+  padding: 25px 10px 0 0;
   margin: 0 auto;
   text-align: center;
   background-color: #f3b6f0;
@@ -13,7 +13,7 @@ header {
 
 .headline {
   font: size 32px;
-  color: #fdfdfd;
+  color: #6d6767;
 }
 
 .nav-list {
@@ -26,7 +26,7 @@ header {
   list-style: none;
   display: inline-block;
   margin: 0 20px;
-  color: #ffffff;
+  color: #6d6767;
 }
 
 main {
@@ -40,14 +40,24 @@ main {
 .list2 {
   border-width: 1.5px;
   border-style: solid;
-  border-color: #a19aa1;
+  border-color: #d0e4f1;
+  background-image: url(glitter.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-li {
+.list-item {
   list-style: none;
-  display: inline-block;
-  margin: 0 10px;
-  padding: 10px 0;
+  margin: 0 0;
+  padding: 10px 20px;
+  color: #6d6767;
 }
 
 table {

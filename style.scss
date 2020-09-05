@@ -6,7 +6,7 @@
 header {
   // headerの幅めいいっぱいに
   width: 100%;
-  padding: 15px 0;
+  padding: 25px 10px 0 0;
   margin: 0 auto;
   //文字(ロゴ)の中央寄せ
   text-align: center;
@@ -18,7 +18,7 @@ header {
   // ロゴ文字の大きさ指定
   font: size 32px;
   // ロゴ文字色の変更
-  color: #fdfdfd;
+  color: #6d6767;
 }
 .nav-list {
   // 文字(リスト)の中央寄せ
@@ -35,7 +35,7 @@ header {
   // 左右幅20pxにした
   margin: 0 20px;
   //文字色をつける
-  color: #ffffff;
+  color: #6d6767;
 }
 // ここからmainにはいる
 // 箇条書きリストを中央寄せにする
@@ -52,15 +52,23 @@ main {
   border-width: 1.5px;
   border-style: solid;
   // 線の色付け
-  border-color: #a19aa1
+  border-color: #d0e4f1;
+  // 背景画像の設定
+  background-image: url(glitter.jpg);
+  // リストのflexbox指定
+  display: flex;
+  // リストの横並び指定
+  flex-direction: row;
+  // リストの均等配置
+  justify-content: space-around;
 }
-li {
+.list-item {
   list-style: none;
-  display: inline-block;
-  // justify-content: space-between;
-  margin: 0 10px;
+  margin: 0 0;
   // リストの線と上下幅を取りたい
-  padding: 10px 0;
+  padding: 10px 20px;
+  // 文字色の指定
+  color: #6d6767;
 }
 // 表を中央寄せにする
 table {
@@ -68,12 +76,25 @@ table {
   margin-right: auto;
   margin-top: 20px;
 }
+
 // ここからフォーム作成のところ
 .contact{
   margin-top: 20px;
   margin-bottom: 20px;
+  // display: flex;
+  // justify-content: space-around;
+  // flex-direction: row;
+  // align-items: center;
 }
-
+// .form{
+//   padding: 10px;
+//   display: flex;
+//   align-items: baseline;
+// }
+// .formleft{
+//   display: flex;
+//   flex-direction: column;
+// }
 footer {
   width: 100%;
   height: 120px;

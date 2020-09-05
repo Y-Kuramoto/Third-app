@@ -13,7 +13,7 @@
     <header>
       <!-- ロゴの箱を作る -->
       <h1 class="headline">
-        <a>サンプルのサイト</a>
+        <a>さんぷるさいと</a>
       </h1>
       <!-- ナビゲーション(リスト)の箱を作る -->
       <ul class="nav-list">
@@ -28,91 +28,175 @@
     <main>
       <!-- 箇条書きリストを表示しよう -->
       <ul class="list2">
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Creations</li>
-        <li>Contact</li>
-        <li>Blog</li>
+        <li class="list-item">Home</li>
+        <li class="list-item">Profile</li>
+        <li class="list-item">Creations</li>
+        <li class="list-item">Contact</li>
+        <li class="list-item">Blog</li>
       </ul>
       <!-- 表を作ろう -->
       <table border="1">
         <div class="table1">
-        <tr>
-          <th>header項目</th>
-          <th>内容</th>
-          <th>形式</th>
-        </tr>
-        <tr>
-          <td>Home</td>
-          <td>絵を用いて全体イメージを伝える</td>
-          <td>写真と文章</td>
-        </tr>
-        <tr>
-          <td>Profile</td>
-          <td>紹介文</td>
-          <td>かわいいフォント</td>
-        </tr>
-        <tr>
-          <td>Creations</td>
-          <td>絵の一覧</td>
-          <td>ページ飛び作りたい</td>
-        </tr>
-        <tr>
-          <td>Contact</td>
-          <td>連絡先記載</td>
-          <td>お問い合わせフォームも</td>
-        </tr>
-        <tr>
-          <td>Blog</td>
-          <td>url記載</td>
-          <td>ブログ紹介</td>
-        </tr>
+          <tr>
+            <th>header項目</th>
+            <th>内容</th>
+            <th>形式</th>
+          </tr>
+          <tr>
+            <td>Home</td>
+            <td>絵を用いて全体イメージを伝える</td>
+            <td>写真と文章</td>
+          </tr>
+          <tr>
+            <td>Profile</td>
+            <td>紹介文</td>
+            <td>かわいいフォント</td>
+          </tr>
+          <tr>
+            <td>Creations</td>
+            <td>絵の一覧</td>
+            <td>ページ飛び作りたい</td>
+          </tr>
+          <tr>
+            <td>Contact</td>
+            <td>連絡先記載</td>
+            <td>お問い合わせフォームも</td>
+          </tr>
+          <tr>
+            <td>Blog</td>
+            <td>url記載</td>
+            <td>ブログ紹介</td>
+          </tr>
         </div>
       </table>
-      <!-- フォーム作成 -->
-      <div class="contact">
-        <form action="example.php" method="post" name="contactForm">
-          <p>お名前</p>
-          <p><input type="text" placeholder="性 名" /></p>
-          <p>メール</p>
-          <p><input type="email" placeholder="メールアドレス" /></p>
-          <p>
-            性別: 
-            <input type="radio" name="gender" value="male" />男
-            <input type="radio" name="gender" value="male" />女
-            <input type="radio" name="gender" value="male" />その他
-          </p>
-          <p>
-              好きな飲み物:
-              <input type="checkbox" name="drink" value="water" id="mizu" checked/>
-              <label for="mizu">水</label>
-              <input type="checkbox" name="drink" value="juice" id="zyusu"/>
-              <label for="zyusu">ジュース</label>
-              <input type="checkbox" name="drink" value="cofffee" id="kohi"/>
-              <label for="kohi">コーヒー</label>
-              <input type="checkbox" name="drink" value="tea" id="kotya"/>
-              <label for="kotya">紅茶</label>
-            </p>
-            <p>
-                血液型: 
-                <select name="bloodtype" id="">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="O">O</option>
-                    <option value="AB">AB</option>
-                    <option value="不明">不明</option>
-                </select>
-            </p>
-            <p>
-                <p>お問い合わせ</p>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="メッセージを入力"></textarea>
-            </p>
-            <p>
-                <input type="submit" value="送信する">
-            </p>
-        </form>
-      </div>
     </main>
+      <!-- フォーム作成 -->
+      
+      <form action="example.php" method="post" name="contactForm">
+        <div class="contact">
+
+          <div class="form">
+          <div class="form1">
+            <label class="formleft">お名前</label>
+          </div>
+          <div class="form2">
+            <input class="formright" type="text" placeholder="性 名" />
+          </div>
+        </div>
+        
+        <div class="form">
+          <div class="form1">
+            <label class="formleft">メール：</label>
+          </div>
+          <div class="form2">
+            <input
+            class="formright"
+            type="email"
+            placeholder="メールアドレス"
+            />
+          </div>
+        </div>
+        
+        <div class="form">
+          <div class="form1">
+            <label class="formleft">性別：</label>
+          </div>
+          <div class="form2">
+            <input
+            class="formright"
+            type="radio"
+            name="gender"
+            value="male"
+            />男
+            <input
+            class="formright"
+            type="radio"
+            name="gender"
+            value="male"
+            />女
+            <input
+            class="formright"
+            type="radio"
+            name="gender"
+            value="male"
+            />その他
+          </div>
+        </div>
+        
+        <div class="form">
+          <div class="form1">
+            <label class="formleft">好きな飲み物:</label>
+          </div>
+          <div class="form2">
+            <input
+            class="formright"
+            type="checkbox"
+            name="drink"
+            value="water"
+            id="mizu"
+            checked
+            />
+            <label class="formright" for="mizu">水</label>
+            <input
+            class="formright"
+            type="checkbox"
+            name="drink"
+            value="juice"
+            id="zyusu"
+            />
+            <label class="formright" for="zyusu">ジュース</label>
+            <input
+            class="formright"
+            type="checkbox"
+            name="drink"
+            value="cofffee"
+            id="kohi"
+            />
+            <label class="formright" for="kohi">コーヒー</label>
+            <input
+            class="formright"
+            type="checkbox"
+            name="drink"
+            value="tea"
+            id="kotya"
+            />
+            <label class="formright" for="kotya">紅茶</label>
+          </div>
+          </div>
+          
+          <div class="form">
+            <div class="form1">
+              <label class="formleft">血液型: </label>
+            </div>
+            <div class="form2">
+              <select class="formright" name="bloodtype" id="">
+                <option class="formright" value="A">A</option>
+                <option class="formright" value="B">B</option>
+                <option class="formright" value="O">O</option>
+                <option class="formright" value="AB">AB</option>
+                <option class="formright" value="不明">不明</option>
+              </select>
+            </div>
+            </div>
+            <div class="form">
+              <div class="form1">
+                <label class="formleft">お問い合わせ</label>
+              </div>
+            <div class="form2">
+                <textarea class="formright"
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="メッセージを入力"
+            ></textarea>
+            <input class="formright" type="submit" value="送信する" />
+          </div>
+          </div>
+
+        </div>
+      </form>
+    
 
     <!-- サイトの中身部分 -->
 
