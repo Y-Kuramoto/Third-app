@@ -36,9 +36,7 @@ main {
 li {
   list-style: none;
   display: inline-block;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0 10px;
 }
 
 table {

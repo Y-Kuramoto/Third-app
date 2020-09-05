@@ -38,7 +38,8 @@ main {
 li{
   list-style: none;
   display: inline-block;
-  justify-content: space-between;
+  // justify-content: space-between;
+  margin: 0 10px;
 }
 // 表を中央寄せにする
 table{
