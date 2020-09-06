@@ -70,134 +70,90 @@
         </div>
       </table>
     </main>
-      <!-- フォーム作成 -->
-      
-      <form action="example.php" method="post" name="contactForm">
-        <div class="contact">
+    <!-- フォーム作成 -->
 
-          <div class="form">
-          <div class="form1">
-            <label class="formleft">お名前</label>
-          </div>
-          <div class="form2">
-            <input class="formright" type="text" placeholder="性 名" />
-          </div>
-        </div>
-        
-        <div class="form">
-          <div class="form1">
-            <label class="formleft">メール</label>
-          </div>
-          <div class="form2">
-            <input
-            class="formright"
-            type="email"
-            placeholder="メールアドレス"
-            />
-          </div>
-        </div>
-        
-        <div class="form">
-          <div class="form1">
-            <label class="formleft">性別</label>
-          </div>
-          <div class="form2">
-            <input
-            class="formright"
-            type="radio"
-            name="gender"
-            value="male"
-            />男
-            <input
-            class="formright"
-            type="radio"
-            name="gender"
-            value="male"
-            />女
-            <input
-            class="formright"
-            type="radio"
-            name="gender"
-            value="male"
-            />その他
-          </div>
-        </div>
-        
-        <div class="form">
-          <div class="form1">
-            <label class="formleft">好きな飲み物</label>
-          </div>
-          <div class="form2">
-            <input
-            class="formright"
-            type="checkbox"
-            name="drink"
-            value="water"
-            id="mizu"
-            checked
-            />
-            <label class="formright" for="mizu">水</label>
-            <input
-            class="formright"
-            type="checkbox"
-            name="drink"
-            value="juice"
-            id="zyusu"
-            />
-            <label class="formright" for="zyusu">ジュース</label>
-            <input
-            class="formright"
-            type="checkbox"
-            name="drink"
-            value="cofffee"
-            id="kohi"
-            />
-            <label class="formright" for="kohi">コーヒー</label>
-            <input
-            class="formright"
-            type="checkbox"
-            name="drink"
-            value="tea"
-            id="kotya"
-            />
-            <label class="formright" for="kotya">紅茶</label>
-          </div>
-          </div>
-          
-          <div class="form">
-            <div class="form1">
-              <label class="formleft">血液型 </label>
-            </div>
-            <div class="form2">
-              <select class="formright" name="bloodtype" id="">
-                <option class="formright" value="A">A</option>
-                <option class="formright" value="B">B</option>
-                <option class="formright" value="O">O</option>
-                <option class="formright" value="AB">AB</option>
-                <option class="formright" value="不明">不明</option>
-              </select>
-            </div>
-            </div>
+    <form action="example.php" method="post" name="contactForm">
+      <div class="contact">
 
-            <div class="form">
-              <div class="form1">
-                <label class="formleft">お問い合わせ</label>
-              </div>
-            <div class="form2">
-                <textarea class="formright"
-              name="message"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="メッセージを入力"
-            ></textarea>
-            <p><input class="formright" type="submit" value="送信する" /></p>
-          </div>
-          </div>
+      <div class="form">
+        <!-- <div class="form1"> -->
+        <label class="formleft">お名前</label>
+        <!-- </div> -->
+        <!-- <div class="form2"> -->
+        <input class="formright" type="text" placeholder="性 名" />
+        <!-- </div> -->
+      </div>
 
+      <div class="form">
+        <!-- <div class="form1"> -->
+        <label class="formleft">メール</label>
+        <!-- </div> -->
+        <!-- <div class="form2"> -->
+        <input class="formright" type="email" placeholder="メールアドレス" />
+        <!-- </div> -->
+      </div>
+
+      <div class="form">
+        <!-- <div class="form1"> -->
+        <label class="formleft">性別</label>
+        <!-- </div> -->
+        <div class="formright buttonbox">
+          <input type="radio" name="gender" value="male" />男
+          <input type="radio" name="gender" value="male" />女
+          <input type="radio" name="gender" value="male" />その他
         </div>
-      </form>
-    
+      </div>
+
+      <div class="form">
+        <!-- <div class="form1"> -->
+        <label class="formleft">好きな飲み物</label>
+        <!-- </div> -->
+        <div class="formright buttonbox">
+          <input type="checkbox" name="drink" value="water" id="mizu" checked />
+          <label for="mizu">水</label>
+          <input type="checkbox" name="drink" value="juice" id="zyusu" />
+          <label for="zyusu">ジュース</label>
+          <input type="checkbox" name="drink" value="cofffee" id="kohi" />
+          <label for="kohi">コーヒー</label>
+          <input type="checkbox" name="drink" value="tea" id="kotya" />
+          <label for="kotya">紅茶</label>
+        </div>
+      </div>
+
+      <div class="form">
+        <!-- <div class="form1"> -->
+        <label class="formleft">血液型 </label>
+        <!-- </div> -->
+        <!-- <div class="form2"> -->
+        <select class="formright" name="bloodtype" id="">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="O">O</option>
+          <option value="AB">AB</option>
+          <option value="不明">不明</option>
+        </select>
+        <!-- </div> -->
+      </div>
+
+      <div class="form">
+        <!-- <div class="form1"> -->
+        <label class="formleft">お問い合わせ</label>
+        <!-- </div> -->
+        <!-- <div class="form2"> -->
+        <textarea
+          class="formright"
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="メッセージを入力"
+        ></textarea>
+        <!-- </div> -->
+      </div>
+
+      <input type="submit" value="送信する" />
+    </div>
+    </form>
 
     <!-- サイトの中身部分 -->
 

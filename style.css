@@ -66,29 +66,52 @@ table {
   margin-top: 20px;
 }
 
+form {
+  margin: 20px auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact {
   width: 80%;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.form1 {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.formleft {
+  width: 50%;
   margin: 10px 10px;
   border-left: 2px solid #f3b6f0;
+  text-align: left;
 }
 
-.form2 {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+.formright {
+  width: 50%;
   margin: 10px 0;
 }
 

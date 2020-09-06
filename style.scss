@@ -78,9 +78,20 @@ table {
 }
 
 // ここからフォーム作成のところ
+form{
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.buttonbox{
+  display: flex;
+  align-items: center;
+}
 .contact{
   width: 80%;
-  margin: 0 auto;
+  text-align: center;
+//   margin: 0 auto;
   // margin-top: 20px;
   // margin-bottom: 20px;
   // padding: 0 auto;
@@ -92,17 +103,23 @@ table {
 .form{
   display: flex;
   // padding: 10px auto;
-  // justify-content: center;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.form1{
-  flex-grow: 1; 
+.formleft{
+  width: 50%;
+  // flex-grow: 1; 
+  // display: flex;
+  // justify-content: center;
+  // width: 100%;
   margin: 10px 10px;
   border-left: 2px solid rgb(243, 182, 240);
   // align-items: center;
+  text-align:left;
 }
-.form2{
-  flex-grow: 2;
+.formright{
+  width: 50%;
+  // flex-grow: 1;
   margin: 10px 0;
 }
 // .formleft{
